@@ -1,0 +1,23 @@
+{
+  "name": "khs-react-form-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "dev": "run-p db start",
+    "db": "json-server --watch src/db.json --port 1337",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "json-schema-faker": "^0.5.0-rc11",
+    "json-server": "^0.12.0",
+    "npm-run-all": "^4.1.1"
+  }
+}
