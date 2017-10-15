@@ -1,20 +1,13 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
+import formik_logo from './img/formik_logo.png'
 import './App.css'
 import SimpleForm from './components/SimpleForm'
 import TediousForm from './components/TediousForm'
-import GameList from './components/GameList'
 
 class App extends Component {
   state = {
-    formType: 'simple',
-    searchTerm: '',
-  }
-
-  handleSearchTerm = searchTerm => {
-    this.setState((prevState, props) => ({
-      searchTerm,
-    }))
+    formType: 'tedious',
   }
 
   handleChangeForm = formType => {
@@ -25,19 +18,19 @@ class App extends Component {
   }
 
   render() {
-    const { formType, searchTerm } = this.state
+    const { formType } = this.state
 
-    // this will do in a pinch, but use a router instead
+    // this will do in a pinch, but should really be a router instead
     let form = null
     switch (formType) {
       case 'simple':
-        form = <SimpleForm onSearch={this.handleSearchTerm} />
+        form = <SimpleForm />
         break
       case 'tedious':
-        form = <TediousForm onSearch={this.handleSearchTerm} />
+        form = <TediousForm />
         break
       case 'formik':
-        form = <SimpleForm onSearch={this.handleSearchTerm} />
+        form = <SimpleForm />
         break
 
       default:
@@ -46,8 +39,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={logo} className="App-logo" alt="react logo" />
+          <img src={formik_logo} className="logo" alt="formik logo" />
+          <h1 className="App-title">The Joy of Forms with React and Formik</h1>
           <div>
             <span
               className="form-link"
@@ -69,9 +63,7 @@ class App extends Component {
             </span>
           </div>
         </header>
-        <div style={{ padding: 20 }}>{form}</div>
-
-        <GameList searchTerm={searchTerm} />
+        <div className="formContainer">{form}</div>
       </div>
     )
   }

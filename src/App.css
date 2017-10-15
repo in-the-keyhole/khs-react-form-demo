@@ -7,9 +7,15 @@
   height: 80px;
 }
 
+.logo {
+  height: 80px;
+  object-fit: cover;
+  width: 80px;
+}
+
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   color: white;
 }
@@ -34,6 +40,24 @@
 .form-link {
   color: white;
   padding: 10px;
-  margin: 10px;
+  margin: 0px 30px;
   cursor: pointer;
+}
+
+.form-link:hover {
+  color: #61dafb;
+}
+
+.addGameForm {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formContainer {
+  padding: 20px;
+}
+
+.form-group {
+  max-width: 200px;
 }

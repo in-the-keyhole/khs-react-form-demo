@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AddGameForm from './AddGameForm'
 
 export default class TediousForm extends Component {
   // static class property - this lets us avoid a constructor
@@ -33,15 +34,7 @@ export default class TediousForm extends Component {
   render = () => (
     <div>
       <h3>Add new game</h3>
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          placeholder="Search games"
-          value={this.state.searchTerm}
-          onChange={this.handleSearch}
-        />
-        <input type="submit" value="Submit" />
-      </form>
+      <AddGameForm />
     </div>
   )
 }

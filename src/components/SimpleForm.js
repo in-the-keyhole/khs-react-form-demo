@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import GameList from './GameList'
 
 export default class SimpleForm extends Component {
   // static class property - this lets us avoid a constructor
   // altogether since we are not accepting any props
   state = {
     searchTerm: '',
+    selectedSearchTerm: '',
   }
 
   /*
@@ -14,7 +16,9 @@ export default class SimpleForm extends Component {
   */
   handleSubmit = event => {
     event.preventDefault() // prevent form post
-    this.props.onSearch(this.state.searchTerm)
+    this.setState((prevState, props) => ({
+      selectedSearchTerm: this.state.searchTerm,
+    }))
   }
 
   handleSearch = event => {
@@ -41,6 +45,8 @@ export default class SimpleForm extends Component {
         />
         <input type="submit" value="Submit" />
       </form>
+      <br />
+      <GameList searchTerm={this.state.selectedSearchTerm} />
     </div>
   )
 }

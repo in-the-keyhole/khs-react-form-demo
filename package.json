@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "3",
+    "classnames": "^2.2.5",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
-    "dev": "run-p db start",
+    "start": "run-p db startreact",
     "db": "json-server --watch src/db.json --port 1337",
-    "start": "react-scripts start",
+    "startreact": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

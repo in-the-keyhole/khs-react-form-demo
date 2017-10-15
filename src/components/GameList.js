@@ -26,6 +26,8 @@ export default class GameList extends Component {
 
     return filtered
       .sort()
-      .map((game, index) => <div key={index}>{game.name}</div>)
+      .map((game, index) => (
+        <div key={index}>{`${index + 1}: ${game.name}`}</div>
+      ))
   }
 }
