@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The code for this walkthrough is available [here](https://github.com/in-the-keyhole/khs-react-form-demo).
 
-Directions: `yarn install && yarn start`
+Instructions for use: `yarn install && yarn start`
 
 # The Joy of Forms with React and Formik
 
