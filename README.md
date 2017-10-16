@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The code for this walkthrough is available [here](https://github.com/in-the-keyhole/khs-react-form-demo).
 
+Directions: `yarn install && yarn start`
+
 # The Joy of Forms with React and Formik
 
 React is a JavaScript library for building user interfaces.  That's it.  It's a way to use javascript to define UI elements based on user-defined properties and internal state.
@@ -135,7 +137,7 @@ export default class AddGameForm extends Component {
 }
 ```
 
-Here we can see multiple custom TextInput controls in their natural habitat.  We can continue to grow the number of inputs if necessary, and we've added a nice ES6 feature to assign to the appropriate part of our `state`.  
+Here we can see multiple custom `TextInput` controls in their natural habitat.  We can continue to grow the number of inputs if necessary, and we've added a nice ES6 feature to assign to the appropriate part of our `state`.  
 
 ```javascript
 this.setState((prevState, props) => ({
