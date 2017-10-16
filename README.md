@@ -179,15 +179,6 @@ export default class AddGameForm extends Component {
             genre: '',
             price: '12',
           }}
-          validate={values => {
-            let errors = {}
-            if (!values.price) {
-              errors.price = 'Required'
-            } else if (values.price > 60) {
-              errors.price = 'Costs too much, wait for the sale!'
-            }
-            return errors
-          }}
           onSubmit={(values, actions) => {
             // this could also easily use props or other
             // local state to alter the behavior if needed
