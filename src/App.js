@@ -4,10 +4,11 @@ import formik_logo from './img/formik_logo.png'
 import './App.css'
 import SimpleForm from './components/SimpleForm'
 import TediousForm from './components/TediousForm'
+import FormikForm from './components/FormikForm'
 
 class App extends Component {
   state = {
-    formType: 'tedious',
+    formType: 'formik',
   }
 
   handleChangeForm = formType => {
@@ -30,7 +31,7 @@ class App extends Component {
         form = <TediousForm />
         break
       case 'formik':
-        form = <SimpleForm />
+        form = <FormikForm />
         break
 
       default:

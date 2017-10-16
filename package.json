@@ -5,10 +5,13 @@
   "dependencies": {
     "bootstrap": "3",
     "classnames": "^2.2.5",
+    "formik": "^0.9.4",
+    "lodash": "^4.17.4",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "yup": "^0.23.0"
   },
   "scripts": {
     "start": "run-p db startreact",
