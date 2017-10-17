@@ -3,25 +3,37 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 120px;
 }
 
 .logo {
-  height: 80px;
+  height: 120px;
   object-fit: cover;
-  width: 80px;
+  width: 120px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-header {
   background-color: #222;
-  height: 180px;
+  height: 230px;
   padding: 20px;
   color: white;
 }
 
+.heart {
+  font-size: 80px;
+  padding-right: 40px;
+  color: red;
+}
+
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .App-intro {
@@ -42,6 +54,7 @@
   padding: 10px;
   margin: 0px 30px;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 .form-link:hover {

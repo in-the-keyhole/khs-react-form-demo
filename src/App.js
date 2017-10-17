@@ -8,7 +8,7 @@ import FormikForm from './components/FormikForm'
 
 class App extends Component {
   state = {
-    formType: 'formik',
+    formType: 'simple',
   }
 
   handleChangeForm = formType => {
@@ -40,8 +40,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="react logo" />
-          <img src={formik_logo} className="logo" alt="formik logo" />
+          <div className="logoContainer">
+            <img src={logo} className="App-logo" alt="react logo" />
+            <span className="heart">❤</span>
+            <img src={formik_logo} className="logo" alt="formik logo" />
+          </div>
           <h1 className="App-title">The Joy of Forms with React and Formik</h1>
           <div>
             <span

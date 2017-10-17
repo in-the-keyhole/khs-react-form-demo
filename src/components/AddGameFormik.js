@@ -15,10 +15,10 @@ export default class AddGameForm extends Component {
               .required('Title is required.'),
           })}
           initialValues={{
-            title: 'asdf',
+            title: '',
             releaseYear: '',
             genre: '',
-            price: '12',
+            price: '',
           }}
           validate={values => {
             let errors = {}
